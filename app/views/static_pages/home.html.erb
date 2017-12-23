@@ -1,7 +1,15 @@
 <% provide(:title, "Home") %>
-<h1>Sample App</h1>
-<p>
-  This is the home page for the
-  <a href="http://www.railstutorial.org/">WESyllabus</a>
-  sample application.
-</p>
+<div class="center jumbotron">
+  <h1>Welcome to WESyllabus!</h1>
+
+  <h2>
+    This is the home page for the
+    <a href="http://score-contest.org/2018/index.php">SCORE 2018</a>
+    project application.
+  </h2>
+
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("kitten.jpg", alt: "WESyllabus logo"),
+            'http://wesyllabus.herokuapp.com' %>
