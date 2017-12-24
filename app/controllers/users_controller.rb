@@ -11,6 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       # 处理注册成功的情况
+      log_in @user
       flash[:success] = "Welcome to WESyllabus!"
       redirect_to @user
     else
