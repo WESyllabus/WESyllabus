@@ -9,7 +9,8 @@ User.create!(name:  "Admin",
              email: "admin@sustc.edu.cn",
              password:              "123456",
              password_confirmation: "123456",
-             admin: true)
+             admin: true,
+             isTeacher: true)
 
 99.times do |n|
   name  = Faker::Name.name
