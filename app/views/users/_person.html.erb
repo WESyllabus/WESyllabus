@@ -1,10 +1,9 @@
 <div class="container">
   <div class="col-md-8">
     <div class="row" style="height:150px">
-      <%= gravatar_for @user %>
-      <%= @user.name %>
+      <div class="col-md-2"><%= gravatar_for @user %></div>
+      <div class="col-md-10">Hi! <%= @user.name %>, welcome to your home page!</div>
     </div>
-    <div class="row" style="height:20px"> </div>
     <div class="container">
       <div class="row" style="height:50px">
         <p style="font-family: 'Oswald', sans-serif;font-size:40px;color:#666666;height:40px">News</p>
@@ -12,11 +11,11 @@
       <div class="row" style="height:20px">
         <p style="font-family: 'Ubuntu', sans-serif;"> Some news with your friends. </p>
       </div>
-      <div class="row bg-primary" style="height:20px;width:710px"> </div>
+      <div class="row bg-light" style="height:20px;width:710px"> </div>
       <div class="row" style="width:710px">
-        <div class="col-md-2 bg-primary">
+        <div class="col-md-2 bg-light">
           <div class="row" style="height:100px;width:100px">
-            
+            <%= gravatar_for @user %>
           </div>
         </div>
         <div class="col-md-1 align-self-start text-center text-dark bg-light" style="height: 410px;">
@@ -53,12 +52,12 @@
       <div class="container">
         <div class="col-md-6 text-center" style="height:150px;width:150px">
           <a href="#" class="text-center"> <span class="glyphicon glyphicon-file btn-lg text-center text-dark" style="color:#666666;font-size:60px"></span>
-            <p style="font-family: 'Ubuntu', sans-serif;font-size:30px" class="text-dark">Upload</p>
+            <p style="font-family: 'Ubuntu', sans-serif;font-size:30px;color: #666666" class="text-dark">Upload</p>
           </a>
         </div>
         <div class="col-md-6 text-center" style="height:150px;width:150px">
           <a href="#" class="text-center"> <span class="glyphicon glyphicon-tree-conifer btn-lg text-center text-dark" style="color:#666666;font-size:60px"></span>
-            <p style="font-family: 'Ubuntu', sans-serif;font-size:30px" class="text-dark">To tree</p>
+            <p style="font-family: 'Ubuntu', sans-serif;font-size:30px;color: #666666" class="text-dark">To tree</p>
           </a>
         </div>
       </div>
@@ -78,7 +77,7 @@
         </thead>
         <tbody class="">
           <tr>
-            <td class="text-left" style="font-size:12px" href="#">
+            <td class="text-left" style="font-size:12px;color: #666666" href="#">
               <a href="#" class="text-dark">Introduction to Computer Science and Programming.pdf</a>
             </td>
             <td>16/11/2017</td>
