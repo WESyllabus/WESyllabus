@@ -13,8 +13,8 @@
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation, class: 'form-control' %>
 
-  <%= f.radio_button :isTeacher,'Teacher', true %>
-  <%= f.radio_button :isTeacher, 'Student',false %>
+  <%= f.radio_button :isTeacher,true %>
+  <%= f.radio_button :isTeacher,false %>
 
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>
