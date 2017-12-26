@@ -5,6 +5,9 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
+        <% if current_user.isTeacher? && !current_user?(user) %>
+		    | <%= link_to "Upload file", '#', class: "btn btn-lg btn-primary" %>
+		  <% end %>
       </h1>
     </section>
   </aside>
