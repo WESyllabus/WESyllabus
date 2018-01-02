@@ -2,3 +2,6 @@
 <% if current_user.isTeacher? && current_user.name == @user.name%>
   <%= render 'person' %>
 <% end %>
+<% if !current_user.isTeacher? && current_user.name == @user.name%>
+  <%= render 'student' %>
+<% end %>
