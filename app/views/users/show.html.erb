@@ -1,4 +1,4 @@
 <% provide(:title, @user.name) %>
-<% if current_user.isTeacher? %>
+<% if current_user.isTeacher? && current_user.name == @user.name%>
   <%= render 'person' %>
 <% end %>
