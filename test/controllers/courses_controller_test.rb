@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class FilesControllerTest < ActionDispatch::IntegrationTest
+class CoursesControllerTest < ActionDispatch::IntegrationTest
   test "should get new" do
-    get files_new_url
+    get upload_path
     assert_response :success
   end
 
