@@ -20,15 +20,22 @@
                   <div class="col-md-1"><p class="centered"><a href="#"><%= gravatar_for @user %></a></p></div>
                 </div>
                 <div class="row">
-                  <h5 class="centered">Marcel Newman</h5>
-                  <p class="centered"><i class="fa fa-comment"></i> 18 | <i class="fa fa-heart"></i> 49</p>
+                  <h5 class="centered"><%= @user.name%></h5>
+                  <p class="centered"><i class="fa fa-comment"></i> 0 | <i class="fa fa-heart"></i> 0</p>
                 </div>
                 
                 <li class="mt">
-                    <a class="active" href="#">
-                        <i class="fa fa-dashboard"></i>
-                        <span>Home</span>
-                    </a>
+                  <a class="active" href="#" >
+                      <i class="fa fa-home"></i>
+                      <span>Home</span>
+                  </a>
+                  <a href= "/upload">
+                      <i class="fa fa-file-o"></i>
+                      <span>Upload</span>
+                  </a>
+                </li>
+                <li class="mt">
+                    
                 </li>
             </ul>
             <!-- sidebar menu end-->
@@ -45,12 +52,13 @@
 
             <div class="row">
                 <div class="col-lg-9 main-chart">
+                  <div class="row mtbox">
+                    
+
+                  </div><!-- /row mt --> 
                 
                   <div class="row mtbox">
                     <aside class="col-md-12">
-                      <section class="user_info">
-                        <%= render 'shared/user_info' %>
-                      </section>
                       <section class="micropost_form">
                         <%= render 'shared/micropost_form' %>
                       </section>

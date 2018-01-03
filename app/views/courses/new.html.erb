@@ -1,0 +1,60 @@
+<% provide(:title, 'Up load') %>
+<h1>Up load</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@course, url: upload_path) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+
+      <%= f.label :course_title %>
+      <%= f.text_field :course_title, class: 'form-control' %>
+
+      <%= f.label :originating_department %>
+      <%= f.select :originating_department, [['Computer Science', 'computer science'],['Others', 'others']] %>
+
+      <%= f.label :course_code %>
+      <%= f.text_field :course_code, class: 'form-control' %>
+
+      <%= f.label :credit_value %>
+      <div class="row">
+      	<div class="col-md-1"><%= f.label 1 %></div>
+      	<div class="col-md-1"><%= f.label 2 %></div>
+      	<div class="col-md-1"><%= f.label 3 %></div>
+      	<div class="col-md-1"><%= f.label 4 %></div>
+      </div>
+      <div class="row">
+      	<div class="col-md-1"><%= f.radio_button :credit_value, 1%></div>
+      	<div class="col-md-1"><%= f.radio_button :credit_value, 2%></div>
+      	<div class="col-md-1"><%= f.radio_button :credit_value, 3%></div>
+      	<div class="col-md-1"><%= f.radio_button :credit_value, 4%></div>
+      </div>
+      
+
+      <%= f.label :course_type %>
+      <%= f.select :course_type,[['GE-Require/Elective','GE-Require/Elective'],['Subject-Foundation', 'Subject-Foundation'],['Subject-Core', 'Subject-Core'], ['Subject-Elective', 'Subject-Elective'], ['Subject-Restricted elective', 'Subject-Restricted elective']], class: 'form-control' %>
+
+      <%= f.label :semester %>
+      <%= f.select :semester, [['Spring', 'Spring'], ['Autumn', 'Autumn'], ['Summer short term', 'Summer short term']], class: 'form-control' %>
+
+      <%= f.label :teaching_language %>
+      <%= f.select :teaching_language,[['English', 'English'], ['Chinese', 'Chinese'], ['En/Ch', 'En/Ch']], class: 'form-control' %>
+
+      <%= f.label :instructor %>
+      <%= f.text_field :instructor, class: 'form-control' %>
+
+      <%= f.label :in_email %>
+      <%= f.email_field :in_email, class: 'form-control' %>
+
+      <%= f.label :tutor %>
+      <%= f.text_field :tutor, class: 'form-control' %>
+
+      <%= f.label :tu_email %>
+      <%= f.email_field :tu_email, class: 'form-control' %>
+
+      <%= f.label :outline %>
+      <%= f.text_area :outline, class: 'form-control',rows: 10 %>
+
+      <%= f.submit "Up load file", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

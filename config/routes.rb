@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'files/new'
+  get '/upload', to: 'courses#new'
+  post '/upload', to: 'courses#create'
 
   get 'sessions/new'
   get    '/login',   to: 'sessions#new'
@@ -8,6 +9,11 @@ Rails.application.routes.draw do
   #for sign up
   get '/signup',   to: 'users#new'
   post '/signup',  to: 'users#create'
+  get '/tree', to: 'users#tree'
+  get '/chartjs', to: 'users#chartjs'
+  get '/calendar', to: 'users#calendar'
+  get '/todo_list', to: 'users#todo_list'
+  get 'gallery', to: 'users#gallery'
   
   #for basic link
   get  '/help',    to: 'static_pages#help'
@@ -17,6 +23,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#home'
   resources :users
+  resources :courses
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
   resources :microposts,          only: [:create, :destroy]

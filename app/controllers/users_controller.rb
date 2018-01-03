@@ -16,6 +16,21 @@ class UsersController < ApplicationController
     @microposts = @user.microposts.paginate(page: params[:page])
   end
 
+  def tree
+  end
+
+  def chartjs
+  end
+
+  def calender
+  end
+
+  def todo_list
+  end
+
+  def gallery
+  end
+
   def new
   	@user = User.new
   end
