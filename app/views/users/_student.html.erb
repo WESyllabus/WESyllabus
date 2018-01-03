@@ -28,7 +28,7 @@
                       </ul>
                   </li> -->
 
-                  <li class="sub-menu">
+                  <li class="sub-menu" data-toggle="collapse" data-target="#submenu1">
                         <a href="javascript:;" >
                             <i class="fa fa-book"></i>
                             <span>Course & Skills</span>
@@ -111,6 +111,14 @@
 
               <div class="row">
                   <div class="col-lg-9 main-chart">
+                    <div class="row mtbox">
+                    <aside class="col-md-12">
+                      <section class="micropost_form">
+                        <%= render 'shared/micropost_form' %>
+                      </section>
+                    </aside>
+
+                  </div><!-- /row mt -->  
                   
                     <div class="row mtbox">
                       <div class="col-md-2 col-sm-2 col-md-offset-1 box0">
@@ -151,7 +159,7 @@
                     
                     </div><!-- /row mt -->  
                   
-                      
+
                       <div class="row mt">
                       <!-- SERVER STATUS PANELS -->
                         <div class="col-md-4 col-sm-4 mb">
