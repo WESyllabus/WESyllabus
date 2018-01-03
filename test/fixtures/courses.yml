@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  course_title: MyString
+  originating_department: MyString
+  course_code: MyString
+  credit_value: MyString
+  course_type: MyString
+  semester: MyString
+  teaching_language: MyString
+  instructor: MyString
+  in_email: MyString
+  tutor: MyString
+  tu_email: MyString
+  outline: MyString
+
+two:
+  course_title: MyString
+  originating_department: MyString
+  course_code: MyString
+  credit_value: MyString
+  course_type: MyString
+  semester: MyString
+  teaching_language: MyString
+  instructor: MyString
+  in_email: MyString
+  tutor: MyString
+  tu_email: MyString
+  outline: MyString

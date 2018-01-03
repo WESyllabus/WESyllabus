@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180103062839) do
+ActiveRecord::Schema.define(version: 20180103151316) do
+
+  create_table "courses", force: :cascade do |t|
+    t.string "course_title"
+    t.string "originating_department"
+    t.string "course_code"
+    t.string "credit_value"
+    t.string "course_type"
+    t.string "semester"
+    t.string "teaching_language"
+    t.string "instructor"
+    t.string "in_email"
+    t.string "tutor"
+    t.string "tu_email"
+    t.string "outline"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "microposts", force: :cascade do |t|
     t.text "content"
